@@ -2,27 +2,9 @@
   "name": "2famsg",
   "version": "0.1.0",
   "description": "Retrieves 2FA codes from Apple Messages",
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-standard-pkg",
-        {
-          "exclude": [
-            "__tests__/**/*"
-          ]
-        }
-      ],
-      [
-        "@pika/plugin-build-node"
-      ],
-      [
-        "@pika/plugin-build-types"
-      ]
-    ]
-  },
-  "main": "./src/2famsg.js",
+  "main": "./src/index.js",
   "bin": {
-    "2famsg": "./src/2famsg.js"
+    "2famsg": "./src/index.js"
   },
   "repository": "https://gitlab.com/selfagency/2famsg",
   "author": "Daniel Sieradski <daniel@self.agency>",
@@ -39,13 +21,14 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "error": "^10.2.0",
     "sqlite-async": "^1.0.12"
   },
   "scripts": {
-    "start": "bin/2famsg"
+    "start": "node src/index"
   }
 }
