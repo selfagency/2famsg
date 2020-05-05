@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 const os = require('os')
 const sqlite = require('sqlite-async')
 const { wrapf } = require('../node_modules/error/index.js')
@@ -95,12 +94,16 @@ const twoFactorMsg = async () => {
       return b.date - a.date
     })
 
-    console.log(results)
+    if (require.main === module) {
+      console.log(results)
+      process.exit()
+    } else {
+      return results
+    }
   } catch (err) {
     throw wrapf('Command failed', err)
   }
 }
+if (require.main === module) twoFactorMsg()
 
 module.exports = twoFactorMsg
-
-if (require.main === module) twoFactorMsg()

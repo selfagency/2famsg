@@ -6,16 +6,24 @@ Retrieves 2FA codes from Apple Messages
 
 ### 🏠 [Homepage](https://gitlab.com/selfagency/2famsg)
 
-## Install
-
-```sh
-npm install
-```
-
 ## Usage
 
 ```sh
-npm run start
+npx 2famsg
+```
+
+or
+
+```
+npm install -g 2famsg
+2famsg
+```
+
+or
+
+```
+const twoFactorMsg = require('2famsg')
+const codes = async () => await twoFactorMsg()
 ```
 
 ## Author
