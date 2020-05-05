@@ -10,7 +10,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
+    "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "error": "^10.2.0",
-    "nexe": "^3.3.2",
     "sqlite-async": "file:lib/sqlite-async",
     "sqlite3": "file:lib/sqlite3"
   },
