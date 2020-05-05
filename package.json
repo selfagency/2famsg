@@ -18,14 +18,18 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "scripty": "^2.0.0"
   },
   "dependencies": {
     "error": "^10.2.0",
     "nexe": "^3.3.2",
-    "sqlite-async": "^1.0.12"
+    "sqlite-async": "file:lib/sqlite-async",
+    "sqlite3": "file:lib/sqlite3"
   },
   "scripts": {
-    "build": "./node_modules/.bin/nexe ./src/2famsg.js --output=bin/2famsg --targets=macos-10.13.0"
+    "build": "scripty",
+    "build:full": "rm -rf node_modules package-lock.json; ./scripts/build_sqlite; npm install; npm run build; npm start;",
+    "start": "bin/2famsg"
   }
 }

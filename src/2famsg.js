@@ -1,6 +1,5 @@
-require('../node_modules/sqlite3/sqlite3.js')
 const os = require('os')
-const sqlite = require('../node_modules/sqlite-async/sqlite-async.js')
+const sqlite = require('sqlite-async')
 const { wrapf } = require('../node_modules/error/index.js')
 
 const homedir = os.homedir()
