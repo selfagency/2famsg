@@ -1,8 +1,11 @@
 {
   "name": "2famsg",
   "version": "0.1.0",
-  "description": "Alfred workflow to pull 2FA codes from Apple Messages",
+  "description": "Retrieves 2FA codes from Apple Messages",
   "main": "./src/2famsg.js",
+  "bin": {
+    "2famsg": "./src/2famsg.js"
+  },
   "repository": "https://gitlab.com/selfagency/2famsg",
   "author": "Daniel Sieradski <daniel@self.agency>",
   "license": "MIT",
@@ -18,18 +21,13 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
-    "pkg": "^4.4.8",
-    "prettier": "^2.0.5",
-    "scripty": "^2.0.0"
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "error": "^10.2.0",
-    "sqlite-async": "file:lib/sqlite-async",
-    "sqlite3": "file:lib/sqlite3"
+    "sqlite-async": "^1.0.12"
   },
   "scripts": {
-    "build": "scripty",
-    "build:full": "rm -rf node_modules package-lock.json; ./scripts/build_sqlite; npm install; npm run build; npm start;",
     "start": "bin/2famsg"
   }
 }
