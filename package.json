@@ -2,6 +2,24 @@
   "name": "2famsg",
   "version": "0.1.0",
   "description": "Retrieves 2FA codes from Apple Messages",
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  },
   "main": "./src/2famsg.js",
   "bin": {
     "2famsg": "./src/2famsg.js"
