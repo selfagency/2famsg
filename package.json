@@ -1,6 +1,6 @@
 {
   "name": "2famsg",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Retrieves 2FA codes from Apple Messages",
   "scripts": {
     "start": "node src/index",

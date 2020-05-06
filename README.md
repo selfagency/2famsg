@@ -12,15 +12,17 @@ npm install -g 2famsg || yarn global add 2famsg
 
 ## CLI Usage
 
-```sh
-[npx] 2famsg [-a | --alfred] [-d | --database DATABASE_PATH] [-q | --query QUERY_TERM]
+```txt
+2famsg [-a | --alfred] [-d | --database DATABASE_PATH] [-q | --query QUERY_TERM]
 ```
+
+Also available via `npx` but loads much more slowly.
 
 ### Options
 
-- `-a` or `--alfred`: \[`Boolean`\] Format output for [Alfred](https://www.alfredapp.com/)
-- `-d` or `--database`: \[`String`\] Specify database path (Default: `~/Library/Messages/chat.db`)
-- `-q` or `--query`: \[`String`\] Term by which to filter results (eg., `facebook` or `amazon`)
+- `-a` or `--alfred` \[`Boolean`\]: Format output for [Alfred](https://www.alfredapp.com/)
+- `-d` or `--database` \[`String`\]: Specify database path (Default: `~/Library/Messages/chat.db`)
+- `-q` or `--query` \[`String`\]: Term by which to filter results (eg., `facebook` or `amazon`)
 
 ## Node Module Usage
 
@@ -32,11 +34,11 @@ const codes = async () =>
   })
 ```
 
-### Options
+### Module Options
 
-- `alfred`: \[`Boolean`\] Format output for [Alfred](https://www.alfredapp.com/)
-- `database`: \[`String`\] Specify database path (Default: `~/Library/Messages/chat.db`)
-- `query`: \[`String`\] Term by which to filter results (eg., `facebook` or `amazon`)
+- `alfred` \[`Boolean`\]: Format output for [Alfred](https://www.alfredapp.com/)
+- `database` \[`String`\]: Specify database path (Default: `~/Library/Messages/chat.db`)
+- `query` \[`String`\]: Term by which to filter results (eg., `facebook` or `amazon`)
 
 ## Build Binaries
 
