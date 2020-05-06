@@ -61,7 +61,7 @@ The [SQLite query](https://gitlab.com/selfagency/2famsg/-/blob/master/src/query.
 
 ## Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://gitlab.com/selfagency/2famsg/issues).
+Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://gitlab.com/selfagency/2famsg/issues).
 
 ## Show your support
 
