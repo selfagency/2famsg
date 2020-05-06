@@ -1,7 +1,3 @@
- ✓ Fetch template
-//www.gitignore.io/api/linux,macos,dotenv,node
-# Edit at https://www.gitignore.io/?templates=linux,macos,dotenv,node
-
 ### dotenv ###
 .env
 
@@ -152,6 +148,6 @@ dist/
 # Temporary folders
 tmp/
 temp/
-pkg/
+bin/
 
 # End of https://www.gitignore.io/api/linux,macos,dotenv,node
