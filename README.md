@@ -14,7 +14,7 @@ npm install -g 2famsg || yarn global add 2famsg
 
 ## CLI Usage
 
-```
+```sh
 > [npx] 2famsg [-a|--alfred] [-d|--database DATABASE_PATH]
 ```
 
@@ -25,7 +25,7 @@ npm install -g 2famsg || yarn global add 2famsg
 
 ## Node Module Usage
 
-```
+```javascript
 const twoFactorMsg = require('2famsg')
 const codes = async () => await twoFactorMsg(opts)
 ```
@@ -34,6 +34,13 @@ const codes = async () => await twoFactorMsg(opts)
 
 - `alfred`: \[`Boolean`\] Format output for [Alfred](https://www.alfredapp.com/)
 - `database`: \[`String`\] Specify database path (Default: `~/Library/Messages/chat.db`)
+
+## Build Binaries
+
+```sh
+npm run build:sqlite
+npm run build:bin
+```
 
 ## Author
 
