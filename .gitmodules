@@ -1,0 +1,6 @@
+[submodule "lib/async"]
+	path = lib/async
+	url = git@github.com:fhellwig/sqlite-async.git
+[submodule "lib/sqlite3"]
+	path = lib/sqlite3
+	url = git@github.com:mapbox/node-sqlite3.git

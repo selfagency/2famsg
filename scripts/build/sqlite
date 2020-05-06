@@ -1,0 +1,13 @@
+#!/bin/bash
+alias node=\$HOME/.config/nvm/10.12.0/bin/node
+alias npm=\$HOME/.config/nvm/10.12.0/bin/npm
+npm version
+cd lib/sqlite3
+#npm install --build-from-source
+echo "module.exports = require(\`\${process.cwd()}/bin/node_sqlite3.node\`);" >lib/sqlite3-binding.js
+cd ../..
+mkdir -p bin
+cd bin
+\cp ../lib/sqlite3/lib/binding/napi-v3-darwin-x64/node_sqlite3.node .
+codesign -s "3rd Party Mac Developer Application" node_sqlite3.node
+exit 0

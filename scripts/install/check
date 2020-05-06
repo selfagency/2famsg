@@ -1,0 +1,11 @@
+#!/bin/bash
+NODE_VER=$( (node --version) | sed 's:v::')
+PATH=/usr/local/bin:$HOME/.config/yarn/global/node_modules/bin:$HOME/.config/nvm/$NODE_VER/bin:$PATH
+
+if hash 2famsg 2>/dev/null; then
+  echo "\`2famsg\` package is installed globally."
+  exit 0
+else
+  echo "\`2famsg\` package is not installed or not in \`\$PATH\`."
+  exit 1
+fi

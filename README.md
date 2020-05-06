@@ -2,29 +2,38 @@
 
 [![npm](https://img.shields.io/npm/dt/2famsg.svg)](https://www.npmjs.com/package/2famsg) [![npm](https://img.shields.io/npm/v/2famsg.svg)](https://www.npmjs.com/package/utfu) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Twitter: @selfagency_llc](https://img.shields.io/twitter/follow/selfagency_llc.svg?style=social)](https://twitter.com/selfagency_llc)
 
-Retrieves 2FA codes from Apple Messages
+Retrieves 2FA codes from Apple Messages and outputs as JSON array
 
 ### 🏠 [Homepage](https://gitlab.com/selfagency/2famsg)
 
-## Usage
+## Installation
 
 ```sh
-npx 2famsg
+npm install -g 2famsg || yarn global add 2famsg
 ```
 
-or
+## CLI Usage
 
 ```
-npm install -g 2famsg
-2famsg
+> [npx] 2famsg [-a|--alfred] [-d|--database DATABASE_PATH]
 ```
 
-or
+### Options
+
+- `-a` or `--alfred`: \[`Boolean`\] Format output for [Alfred](https://www.alfredapp.com/)
+- `-d` or `--database`: \[`String`\] Specify database path (Default: `~/Library/Messages/chat.db`)
+
+## Node Module Usage
 
 ```
 const twoFactorMsg = require('2famsg')
-const codes = async () => await twoFactorMsg()
+const codes = async () => await twoFactorMsg(opts)
 ```
+
+### Options
+
+- `alfred`: \[`Boolean`\] Format output for [Alfred](https://www.alfredapp.com/)
+- `database`: \[`String`\] Specify database path (Default: `~/Library/Messages/chat.db`)
 
 ## Author
 
@@ -36,7 +45,7 @@ const codes = async () => await twoFactorMsg()
 
 ## Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://gitlab.com/selfagency/utfu/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://gitlab.com/selfagency/2famsg/issues).
 
 ## Show your support
 
