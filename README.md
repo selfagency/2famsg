@@ -18,7 +18,7 @@ npm install -g 2famsg || yarn global add 2famsg
 
 Also available via `npx` but loads much more slowly.
 
-### Options
+### CLI Options
 
 - `-a` or `--alfred` \[`Boolean`\]: Format output for [Alfred](https://www.alfredapp.com/)
 - `-d` or `--database` \[`String`\]: Specify database path (Default: `~/Library/Messages/chat.db`)
