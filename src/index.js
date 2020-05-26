@@ -10,7 +10,7 @@ const twoFactorMsg = async opts => {
       JSON.stringify({
         items: [
           {
-            title: '🤷 No 2FA codes found in Messages',
+            title: '❌ No 2FA codes found in Messages',
             arg: null,
             valid: true
           }

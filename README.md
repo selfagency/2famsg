@@ -57,7 +57,7 @@ npm run build:bin
 
 ## Acknowledgements
 
-The [SQLite query](https://gitlab.com/selfagency/2famsg/-/blob/master/src/query.js) was lifted from [Scott Carpenter](https://github.com/squatto/)'s [alfred-imessage-2fa](https://github.com/squatto/alfred-imessage-2fa) Alfred workflow, which I modified somewhat. Scott's project was a great start but I was looking for a more effective solution and decided to build one in a language in which I felt more comfortable jamming on the code.
+The [SQLite query](https://gitlab.com/selfagency/2famsg/-/blob/master/src/query.js) was lifted from [Scott Carpenter](https://github.com/squatto/)'s [alfred-imessage-2fa](https://github.com/squatto/alfred-imessage-2fa) Alfred workflow, which I modified somewhat. Scott's project was a great start but I was looking for a more robust solution and decided to build one in a language in which I felt more comfortable jamming on the code.
 
 ## Contributing
 

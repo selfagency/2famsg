@@ -1,7 +1,8 @@
 #!/bin/bash
-alias node=\$HOME/.config/nvm/10.12.0/bin/node
-alias npm=\$HOME/.config/nvm/10.12.0/bin/npm
-npm version
-nexe src/index.js --output=bin/2famsg --targets=macos-10.12.0 --verbose
+alias node=\$HOME/.config/nvm/12.4.0/bin/node
+alias npm=\$HOME/.config/nvm/12.4.0/bin/npm
+# npm version
+nexe src/index.js --output=bin/2famsg --targets=macos-12.4.0 --verbose --build true --mangle false --configure=--openssl-no-asm
+# node src/build.js
 codesign -s "3rd Party Mac Developer Application" bin/2famsg
 exit 0

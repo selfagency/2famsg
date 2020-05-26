@@ -1,5 +1,5 @@
 const strip = str => {
-  return str.replace(/[-.,?:#/\\\n\ ]/g, '')
+  return str ? str.replace(/[-.,?:#/\\\n\ ]/g, '') : undefined
 }
 
 module.exports = strip

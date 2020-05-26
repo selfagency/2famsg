@@ -1,6 +1,6 @@
 {
   "name": "2famsg",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Retrieves 2FA codes from Apple Messages",
   "scripts": {
     "start": "node src/index",
@@ -27,7 +27,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
-    "nexe": "^3.3.2",
     "prettier": "^2.0.5",
     "scripty": "^2.0.0",
     "typescript": "^3.8.3"
@@ -35,6 +34,7 @@
   "dependencies": {
     "dayjs": "^1.8.26",
     "error": "^10.2.0",
+    "nexe": "^4.0.0-beta.6",
     "sqlite-async": "file:lib/async"
   }
 }

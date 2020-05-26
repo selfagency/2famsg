@@ -5,14 +5,14 @@ const error = (msg, err, opts) => {
     return JSON.stringify({
       items: [
         {
-          title: `❌ Error: ${msg[0]}`,
+          title: `? Error: ${msg[0]}`,
           subtitle: `${msg[1]}`,
           arg: null,
           valid: true
         }
       ]
     })
-  if (err) console.error(wrapf(`❌ ${msg[0]}. ${msg[1]}.\n\n`, err))
+  if (err) console.error(wrapf(`? ${msg[0]}. ${msg[1]}.\n\n`, err))
   process.exitCode = 1
 }
 
