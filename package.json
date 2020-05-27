@@ -1,9 +1,10 @@
 {
   "name": "2famsg",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Retrieves 2FA codes from Apple Messages",
   "scripts": {
     "start": "node src/index",
+    "build:all": "scripty",
     "build:bin": "scripty",
     "build:sqlite": "scripty",
     "install:check": "scripty"

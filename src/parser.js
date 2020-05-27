@@ -17,7 +17,7 @@ const parser = async opts => {
         let text = item.text.replace(/[\n]/gm, ' ')
 
         // check if message contains 2fa related keywords
-        let hasCode = /code|otp|[^%]2fa|password|access|authentication|verification/g.exec(text.toLowerCase())
+        let hasCode = /code|otp|[^%]2fa|password|access|authentication|verification|pin/g.exec(text.toLowerCase())
 
         // check if message matches query
         let queryMatch
@@ -33,11 +33,11 @@ const parser = async opts => {
           const date = new Date(item.message_date)
 
           // get code
-          let code = /(\d+\s?\-?\d+)/g.exec(text)
+          let code = /(\d{3,}\s?\-?\d+)/g.exec(text)
           if (code) code = strip(code[0])
 
           // get source, ie. sender
-          let source = text.match(/\b([A-Z]\S*)\b/g)
+          let source = text.match(/\b([A-Z]\S*|[a-z][A-Z]\S*)\b/g)
           if (source)
             source = source[0].toLowerCase() === 'your' || /^G\-/.exec(source[0]) ? strip(source[1]) : strip(source[0])
           if (source && source.length > 32) source = source.substring(0, 32) + '...'

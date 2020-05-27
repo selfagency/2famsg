@@ -1,4 +1,4 @@
-const sqlite = require('sqlite-async')
+const sqlite = require('../lib/async/sqlite-async')
 
 const error = require('./error')
 const query = require('./query')
